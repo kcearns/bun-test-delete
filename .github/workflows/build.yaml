@@ -30,6 +30,7 @@ jobs:
           context: .
           push: true
           tags: ghcr.io/${{ github.repository }}/bun-test:${{ steps.short-sha.outputs.sha }}
+          platforms: linux/amd64,linux/arm64
 
       # - name: Repository Dispatch
       #   uses: peter-evans/repository-dispatch@v1
